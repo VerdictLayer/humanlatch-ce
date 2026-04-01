@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --app-bg: #0f1117;
+  --app-panel: #1a1d27;
+  --app-panel-strong: #161923;
+  --app-panel-muted: #222634;
+  --app-border: #2a2d3a;
+  --app-border-strong: #3a4052;
+  --app-text: #f1f5f9;
+  --app-text-muted: #94a3b8;
+  --app-text-soft: #64748b;
+  --app-accent: #6366f1;
+  --app-accent-strong: #4f46e5;
+  --app-accent-soft: rgba(99, 102, 241, 0.14);
+  --app-sidebar: #171a24;
+  --app-sidebar-hover: #262c3d;
+  --app-shadow: 0 22px 60px rgba(2, 6, 23, 0.28);
+}
+
+[data-theme='enterprise'] {
+  --app-bg: #eef3f7;
+  --app-panel: rgba(255, 255, 255, 0.94);
+  --app-panel-strong: #ffffff;
+  --app-panel-muted: #f7f9fc;
+  --app-border: #d7dee8;
+  --app-border-strong: #c2ccda;
+  --app-text: #132033;
+  --app-text-muted: #334155;
+  --app-text-soft: #5b6b80;
+  --app-accent: #0f4c81;
+  --app-accent-strong: #0b3b63;
+  --app-accent-soft: rgba(15, 76, 129, 0.12);
+  --app-sidebar: linear-gradient(180deg, #10233b 0%, #1a3657 100%);
+  --app-sidebar-hover: rgba(255, 255, 255, 0.1);
+  --app-shadow: 0 24px 50px rgba(15, 23, 42, 0.08);
+}
+
+html, body {
+  background-color: var(--app-bg);
+  color: var(--app-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--app-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--app-border-strong);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--app-text-soft);
+}
