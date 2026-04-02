@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'HumanLatch',
   description: 'Control plane for AI actions with policy, approvals, and audit trails.',
+  icons: { icon: '/humanlatch-logo-64.png', apple: '/humanlatch-logo.png' },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
